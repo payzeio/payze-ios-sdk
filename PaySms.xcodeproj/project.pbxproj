@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F644C312765EA4F00B265B5 /* CheckTransactionStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F644C302765EA4F00B265B5 /* CheckTransactionStatusResponse.swift */; };
+		8F644C332765F3FA00B265B5 /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F644C322765F3FA00B265B5 /* PaymentDetails.swift */; };
+		8F644C352765F91F00B265B5 /* TwoFAResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F644C342765F91F00B265B5 /* TwoFAResponse.swift */; };
+		8F9DAF502755347100066559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9DAF4F2755347100066559 /* AppDelegate.swift */; };
+		8F9DAF542755347100066559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9DAF532755347100066559 /* ViewController.swift */; };
+		8F9DAF572755347100066559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9DAF552755347100066559 /* Main.storyboard */; };
+		8F9DAF592755347600066559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9DAF582755347600066559 /* Assets.xcassets */; };
+		8F9DAF5C2755347600066559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9DAF5A2755347600066559 /* LaunchScreen.storyboard */; };
+		8FB941D1275B50C500674036 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941D0275B50C500674036 /* Route.swift */; };
+		8FB941D3275B512B00674036 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941D2275B512B00674036 /* Method.swift */; };
+		8FB941D5275B515F00674036 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941D4275B515F00674036 /* HTTPError.swift */; };
+		8FB941D7275B51A000674036 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941D6275B51A000674036 /* HTTPRequest.swift */; };
+		8FB941D9275B520600674036 /* HTTPNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941D8275B520600674036 /* HTTPNetworkResponse.swift */; };
+		8FB941DB275B534500674036 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941DA275B534500674036 /* Encoding.swift */; };
+		8FB941DD275B53E200674036 /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941DC275B53E200674036 /* PaymentService.swift */; };
+		8FB941E1275B55E200674036 /* StartPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB941E0275B55E200674036 /* StartPaymentResponse.swift */; };
+		8FE0C621276132EA00BE3308 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0C620276132EA00BE3308 /* WebController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F644C302765EA4F00B265B5 /* CheckTransactionStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTransactionStatusResponse.swift; sourceTree = "<group>"; };
+		8F644C322765F3FA00B265B5 /* PaymentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetails.swift; sourceTree = "<group>"; };
+		8F644C342765F91F00B265B5 /* TwoFAResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFAResponse.swift; sourceTree = "<group>"; };
+		8F9DAF4C2755347100066559 /* PaySms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaySms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9DAF4F2755347100066559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F9DAF532755347100066559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F9DAF562755347100066559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F9DAF582755347600066559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F9DAF5B2755347600066559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F9DAF5D2755347600066559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB941D0275B50C500674036 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		8FB941D2275B512B00674036 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		8FB941D4275B515F00674036 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		8FB941D6275B51A000674036 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		8FB941D8275B520600674036 /* HTTPNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkResponse.swift; sourceTree = "<group>"; };
+		8FB941DA275B534500674036 /* Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
+		8FB941DC275B53E200674036 /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		8FB941E0275B55E200674036 /* StartPaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPaymentResponse.swift; sourceTree = "<group>"; };
+		8FE0C620276132EA00BE3308 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F9DAF492755347100066559 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F9DAF432755347100066559 = {
+			isa = PBXGroup;
+			children = (
+				8F9DAF4E2755347100066559 /* PaySms */,
+				8F9DAF4D2755347100066559 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F9DAF4D2755347100066559 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F9DAF4C2755347100066559 /* PaySms.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F9DAF4E2755347100066559 /* PaySms */ = {
+			isa = PBXGroup;
+			children = (
+				8FB941CC275B509200674036 /* Networking */,
+				8F9DAF4F2755347100066559 /* AppDelegate.swift */,
+				8F9DAF532755347100066559 /* ViewController.swift */,
+				8FE0C620276132EA00BE3308 /* WebController.swift */,
+				8F9DAF552755347100066559 /* Main.storyboard */,
+				8F9DAF582755347600066559 /* Assets.xcassets */,
+				8F9DAF5A2755347600066559 /* LaunchScreen.storyboard */,
+				8F9DAF5D2755347600066559 /* Info.plist */,
+			);
+			path = PaySms;
+			sourceTree = "<group>";
+		};
+		8FB941CC275B509200674036 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8FE0C62227613F1300BE3308 /* Models */,
+				8FB941CF275B50AB00674036 /* Encoding */,
+				8FB941CE275B50A000674036 /* Services */,
+				8FB941CD275B509A00674036 /* HTTP */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8FB941CD275B509A00674036 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				8FB941D0275B50C500674036 /* Route.swift */,
+				8FB941D2275B512B00674036 /* Method.swift */,
+				8FB941D4275B515F00674036 /* HTTPError.swift */,
+				8FB941D6275B51A000674036 /* HTTPRequest.swift */,
+				8FB941D8275B520600674036 /* HTTPNetworkResponse.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		8FB941CE275B50A000674036 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8FB941DC275B53E200674036 /* PaymentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8FB941CF275B50AB00674036 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				8FB941DA275B534500674036 /* Encoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		8FE0C62227613F1300BE3308 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FB941E0275B55E200674036 /* StartPaymentResponse.swift */,
+				8F644C302765EA4F00B265B5 /* CheckTransactionStatusResponse.swift */,
+				8F644C322765F3FA00B265B5 /* PaymentDetails.swift */,
+				8F644C342765F91F00B265B5 /* TwoFAResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F9DAF4B2755347100066559 /* PaySms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F9DAF602755347600066559 /* Build configuration list for PBXNativeTarget "PaySms" */;
+			buildPhases = (
+				8F9DAF482755347100066559 /* Sources */,
+				8F9DAF492755347100066559 /* Frameworks */,
+				8F9DAF4A2755347100066559 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaySms;
+			productName = PaySms;
+			productReference = 8F9DAF4C2755347100066559 /* PaySms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F9DAF442755347100066559 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8F9DAF4B2755347100066559 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F9DAF472755347100066559 /* Build configuration list for PBXProject "PaySms" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F9DAF432755347100066559;
+			productRefGroup = 8F9DAF4D2755347100066559 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F9DAF4B2755347100066559 /* PaySms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F9DAF4A2755347100066559 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9DAF5C2755347600066559 /* LaunchScreen.storyboard in Resources */,
+				8F9DAF592755347600066559 /* Assets.xcassets in Resources */,
+				8F9DAF572755347100066559 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F9DAF482755347100066559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB941DB275B534500674036 /* Encoding.swift in Sources */,
+				8FB941D3275B512B00674036 /* Method.swift in Sources */,
+				8F9DAF542755347100066559 /* ViewController.swift in Sources */,
+				8FB941E1275B55E200674036 /* StartPaymentResponse.swift in Sources */,
+				8FB941DD275B53E200674036 /* PaymentService.swift in Sources */,
+				8F644C312765EA4F00B265B5 /* CheckTransactionStatusResponse.swift in Sources */,
+				8F644C352765F91F00B265B5 /* TwoFAResponse.swift in Sources */,
+				8FB941D1275B50C500674036 /* Route.swift in Sources */,
+				8FE0C621276132EA00BE3308 /* WebController.swift in Sources */,
+				8F9DAF502755347100066559 /* AppDelegate.swift in Sources */,
+				8FB941D7275B51A000674036 /* HTTPRequest.swift in Sources */,
+				8F644C332765F3FA00B265B5 /* PaymentDetails.swift in Sources */,
+				8FB941D9275B520600674036 /* HTTPNetworkResponse.swift in Sources */,
+				8FB941D5275B515F00674036 /* HTTPError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F9DAF552755347100066559 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F9DAF562755347100066559 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F9DAF5A2755347600066559 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F9DAF5B2755347600066559 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F9DAF5E2755347600066559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F9DAF5F2755347600066559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F9DAF612755347600066559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZ4RRBQ322;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaySms/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iraklishelia941-gmail.PaySms";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F9DAF622755347600066559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZ4RRBQ322;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaySms/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iraklishelia941-gmail.PaySms";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F9DAF472755347100066559 /* Build configuration list for PBXProject "PaySms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9DAF5E2755347600066559 /* Debug */,
+				8F9DAF5F2755347600066559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F9DAF602755347600066559 /* Build configuration list for PBXNativeTarget "PaySms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9DAF612755347600066559 /* Debug */,
+				8F9DAF622755347600066559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F9DAF442755347100066559 /* Project object */;
+}
