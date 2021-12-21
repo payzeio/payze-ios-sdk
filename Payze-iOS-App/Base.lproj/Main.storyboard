@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="cc-number"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card holder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unJ-aR-Pdm">
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card holder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unJ-aR-Pdm">
                                 <rect key="frame" x="20" y="389.5" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ZN6-K1-CQk"/>
@@ -42,7 +42,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Transaction ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWC-xY-QvI">
+                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Transaction ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWC-xY-QvI">
                                 <rect key="frame" x="20" y="495" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="mSv-95-BG1"/>
@@ -53,17 +53,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-u0-t4K">
                                 <rect key="frame" x="20" y="442.5" width="374" height="45"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33O-Yq-ziy">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33O-Yq-ziy">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="postal-code"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMS-fs-iOB">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMS-fs-iOB">
                                         <rect key="frame" x="124.5" y="0.0" width="125" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="date-time"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-C1-pDL">
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-C1-pDL">
                                         <rect key="frame" x="249.5" y="0.0" width="124.5" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="date-time"/>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-HR-ZaB">
-                                <rect key="frame" x="20" y="646" width="374" height="180"/>
+                                <rect key="frame" x="20" y="645.5" width="374" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="VzR-Uc-br1"/>
                                 </constraints>
@@ -90,17 +90,24 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-TD-3f2">
                                 <rect key="frame" x="120" y="575" width="174" height="35.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35.5" id="qTT-yh-Qnc"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="MAKE PAYMENT">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makePayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PS3-MV-x6u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aLV-HR-ZaB" secondAttribute="bottom" constant="36.5" id="0NU-bj-hiI"/>
                             <constraint firstItem="JuZ-8e-Ccr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2JF-Es-Q6P"/>
                             <constraint firstItem="cjn-u0-t4K" firstAttribute="top" secondItem="unJ-aR-Pdm" secondAttribute="bottom" constant="8" symbolic="YES" id="4VP-t6-1hu"/>
                             <constraint firstItem="0yv-NT-TxA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="6D6-kx-m4z"/>
@@ -128,7 +135,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cardHolderTxtField" destination="unJ-aR-Pdm" id="z9j-5Q-nZZ"/>
+                        <outlet property="cardNumberTxtField" destination="K7N-Am-zpJ" id="jvi-nV-Wyv"/>
                         <outlet property="cardView" destination="aLV-HR-ZaB" id="xUF-fC-SGI"/>
+                        <outlet property="cvvTxtField" destination="33O-Yq-ziy" id="P9a-7Q-0fH"/>
+                        <outlet property="monthTxtField" destination="sMS-fs-iOB" id="t2O-ge-TZk"/>
+                        <outlet property="transactionIdTxtField" destination="uWC-xY-QvI" id="W9M-fz-tnE"/>
+                        <outlet property="yearTxtField" destination="n1S-C1-pDL" id="adS-N9-Zij"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
