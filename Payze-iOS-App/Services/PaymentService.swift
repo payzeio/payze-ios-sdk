@@ -51,8 +51,14 @@ final class PaymentService: NSObject, PaymentServiceProtocol {
                             }
                         }
                     } else if result.success {
-                        // TODO: Add transaction status check before returning closure
-                        completion(.success(result))
+                        self.checkStatusForTransaction(paymentDetails .transactionId) { transactionStatus in
+                            switch transactionStatus {
+                            case.success(_):
+                                completion(.success(result))
+                            default:
+                                completion(.failure(HTTPNetworkError.badRequest))
+                            }
+                        }
                     }
                 case .failure:
                     completion(.failure(HTTPNetworkError.decodingFailed))
