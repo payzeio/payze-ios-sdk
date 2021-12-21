@@ -14,7 +14,7 @@ struct PaymentDetails {
     let securityNumber: String
     let transactionId: String
     let billingAddress: String?
-    
+    // TODO delete this
     static let mock: PaymentDetails = .init(number: "4127421007993973",
                                             cardHolder: "SALOME GELASHVILI",
                                             expirationDate: "11/22",

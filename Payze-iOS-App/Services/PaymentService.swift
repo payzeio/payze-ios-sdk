@@ -51,6 +51,7 @@ final class PaymentService: NSObject, PaymentServiceProtocol {
                             }
                         }
                     } else if result.success {
+                        // TODO: Add transaction status check before returning closure
                         completion(.success(result))
                     }
                 case .failure:
@@ -93,6 +94,7 @@ final class PaymentService: NSObject, PaymentServiceProtocol {
     }
     
     private func show2FAView(iframeUrl: String, _ completion: @escaping (TwoFAResponse) -> ()) {
+        // Show WKWebView on top of everything
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.popUpView = MyWebView(url: iframeUrl)
@@ -100,6 +102,8 @@ final class PaymentService: NSObject, PaymentServiceProtocol {
             let rootVC = UIApplication.shared.windows.first?.rootViewController
             rootVC?.view.addSubview(self.popUpView!)
         }
+        
+        // Wait for WKWebView redirect
         DispatchQueue.global().async { [weak self] in
             guard let self = self else { return }
             while self.twoFactorAuthResponse == nil {
@@ -148,6 +152,7 @@ final class PaymentService: NSObject, PaymentServiceProtocol {
         }
     }
     
+    // TODO handle cleanup
     private func cleanup() {
         twoFactorAuthResponse = nil
         popUpView = nil
@@ -156,6 +161,7 @@ final class PaymentService: NSObject, PaymentServiceProtocol {
 
 extension PaymentService: WebControllerDelegate {
     func redirected(with response: TwoFAResponse) {
+        // WebView Redirected we save response to handle success/fail
         twoFactorAuthResponse = response
         print("Redirect delegate called")
     }

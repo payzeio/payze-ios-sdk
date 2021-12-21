@@ -20,6 +20,9 @@ class MyWebView: UIView, WKNavigationDelegate {
     var iFrameUrl: String
     
     init(url: String) {
+        
+        // TODO Add Close button for the user to be able to close this page
+        // TODO handle close button scenario. What webView delegate should return if user closes the webView.
         iFrameUrl = url
         super.init(frame: .zero)
         self.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
@@ -48,6 +51,7 @@ class MyWebView: UIView, WKNavigationDelegate {
         }
     }
     
+    // TODO: Delete this method. Needed only for testing
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         // testing
         // webDelegate?.redirected(with: .failure(HTTPNetworkError.badRequest))
