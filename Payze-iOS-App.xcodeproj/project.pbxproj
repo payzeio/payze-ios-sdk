@@ -24,6 +24,8 @@
 		8FC77F1E2770A648006C3BA9 /* TwoFAResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC77F132770A647006C3BA9 /* TwoFAResponse.swift */; };
 		8FC77F1F2770A648006C3BA9 /* CheckTransactionStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC77F142770A647006C3BA9 /* CheckTransactionStatusResponse.swift */; };
 		8FC77F212770A65C006C3BA9 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC77F202770A65C006C3BA9 /* WebController.swift */; };
+		AED5ED4F2771F1E800F14C58 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5ED4E2771F1E800F14C58 /* CardView.swift */; };
+		AED5ED512771F26C00F14C58 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5ED502771F26C00F14C58 /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		8FC77F132770A647006C3BA9 /* TwoFAResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFAResponse.swift; sourceTree = "<group>"; };
 		8FC77F142770A647006C3BA9 /* CheckTransactionStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckTransactionStatusResponse.swift; sourceTree = "<group>"; };
 		8FC77F202770A65C006C3BA9 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		AED5ED4E2771F1E800F14C58 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AED5ED502771F26C00F14C58 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		8FC77EF12770A627006C3BA9 /* Payze-iOS-App */ = {
 			isa = PBXGroup;
 			children = (
+				AED5ED4D2771F1DA00F14C58 /* UI */,
 				8FC77F062770A647006C3BA9 /* Encoding */,
 				8FC77F082770A647006C3BA9 /* HTTP */,
 				8FC77F102770A647006C3BA9 /* Models */,
@@ -130,6 +135,15 @@
 				8FC77F142770A647006C3BA9 /* CheckTransactionStatusResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AED5ED4D2771F1DA00F14C58 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AED5ED4E2771F1E800F14C58 /* CardView.swift */,
+				AED5ED502771F26C00F14C58 /* Color+Hex.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +221,12 @@
 				8FC77F152770A647006C3BA9 /* Encoding.swift in Sources */,
 				8FC77F212770A65C006C3BA9 /* WebController.swift in Sources */,
 				8FC77F1C2770A648006C3BA9 /* StartPaymentResponse.swift in Sources */,
+				AED5ED4F2771F1E800F14C58 /* CardView.swift in Sources */,
 				8FC77F1D2770A648006C3BA9 /* PaymentDetails.swift in Sources */,
 				8FC77F1F2770A648006C3BA9 /* CheckTransactionStatusResponse.swift in Sources */,
 				8FC77F172770A647006C3BA9 /* HTTPNetworkResponse.swift in Sources */,
 				8FC77EF72770A627006C3BA9 /* ViewController.swift in Sources */,
+				AED5ED512771F26C00F14C58 /* Color+Hex.swift in Sources */,
 				8FC77F1B2770A648006C3BA9 /* PaymentService.swift in Sources */,
 				8FC77F162770A647006C3BA9 /* HTTPRequest.swift in Sources */,
 				8FC77F1E2770A648006C3BA9 /* TwoFAResponse.swift in Sources */,
