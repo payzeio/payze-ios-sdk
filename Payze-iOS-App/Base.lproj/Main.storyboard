@@ -74,7 +74,7 @@
                                 </constraints>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-HR-ZaB">
-                                <rect key="frame" x="20" y="646" width="374" height="180"/>
+                                <rect key="frame" x="20" y="645.5" width="374" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="VzR-Uc-br1"/>
                                 </constraints>
@@ -96,6 +96,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makePayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSK-xS-M0I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -128,7 +131,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cardHolderTxtField" destination="unJ-aR-Pdm" id="hdG-NZ-O2n"/>
+                        <outlet property="cardNumberTxtField" destination="K7N-Am-zpJ" id="q9A-tP-nuD"/>
                         <outlet property="cardView" destination="aLV-HR-ZaB" id="xUF-fC-SGI"/>
+                        <outlet property="cvvTxtField" destination="33O-Yq-ziy" id="JsS-Tw-9qZ"/>
+                        <outlet property="monthTxtField" destination="sMS-fs-iOB" id="hfV-Oc-DPs"/>
+                        <outlet property="transactionIDTxtField" destination="uWC-xY-QvI" id="bRC-3B-UJg"/>
+                        <outlet property="yearTxtField" destination="n1S-C1-pDL" id="qFX-Rx-I1I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
