@@ -73,4 +73,13 @@ class MyWebView: UIView, WKNavigationDelegate {
         }
     }
     
+    // TODO: Delete this method. Needed only for testing
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        // testing
+        // webDelegate?.redirected(with: .failure(HTTPNetworkError.badRequest))
+        //        webDelegate?.redirected(with: .success(true))
+        print("finished loading")
+    }
 }
+
+
