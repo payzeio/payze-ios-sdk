@@ -25,7 +25,6 @@ class ViewController: UIViewController {
 
         view.backgroundColor = .white
         setupCardView()
-        setupTxtFields()
     }
     
     @available(iOS 13.0, *)
@@ -39,15 +38,7 @@ class ViewController: UIViewController {
             print(result)
         }
     }
-    
-    @IBAction func makePayment(_ sender: Any) {
-        guard let paymentDetails = PaymentDetails.init(number: cardNumberTxtField.text, cardHolder: cardHolderTxtField.text, expirationDate: makeExpirationDate(s1: monthTxtField.text, s2: yearTxtField.text), securityNumber: cvvTxtField.text, transactionId: transactionIdTxtField.text, billingAddress: "") else { return }
-        
-        myService.startPayment(paymentDetails: paymentDetails) { result in
-            print(result)
-        }
-    }
-    
+
     @objc func cardViewClicked(sender: UITapGestureRecognizer) {
         myService.startPayment(paymentDetails: PaymentDetails.mock) { result in
             print(result)
@@ -72,16 +63,3 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField.tag == 0 || textField.tag == 2 {
-            let allowedCharacters = CharacterSet.decimalDigits
-            let characterSet = CharacterSet(charactersIn: string)
-            
-            return allowedCharacters.isSuperset(of: characterSet)
-        } else {
-            return true
-        }
-        
-    }
-}
