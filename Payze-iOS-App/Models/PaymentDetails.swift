@@ -18,7 +18,6 @@ struct PaymentDetails {
     // TODO delete this
     
     static let mock: PaymentDetails! = .init(number: "4127421007993973",
-                                             
                                              cardHolder: "SALOME GELASHVILI",
                                              expirationDate: "11/22",
                                              securityNumber: "360",

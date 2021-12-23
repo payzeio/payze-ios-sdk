@@ -19,7 +19,6 @@ class MyWebView: UIView, WKNavigationDelegate {
     var webDelegate: WebControllerDelegate?
     var iFrameUrl: String
     
-    
     init(url: String) {
         
         // TODO Add Close button for the user to be able to close this page

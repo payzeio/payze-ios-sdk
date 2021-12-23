@@ -100,11 +100,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
                                 <connections>
-<<<<<<< HEAD
                                     <action selector="makePayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PS3-MV-x6u"/>
-=======
-                                    <action selector="makePayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSK-xS-M0I"/>
->>>>>>> redesign
                                 </connections>
                             </button>
                         </subviews>
@@ -139,23 +135,13 @@
                         </constraints>
                     </view>
                     <connections>
-<<<<<<< HEAD
                         <outlet property="cardHolderTxtField" destination="unJ-aR-Pdm" id="z9j-5Q-nZZ"/>
                         <outlet property="cardNumberTxtField" destination="K7N-Am-zpJ" id="jvi-nV-Wyv"/>
                         <outlet property="cardView" destination="aLV-HR-ZaB" id="xUF-fC-SGI"/>
                         <outlet property="cvvTxtField" destination="33O-Yq-ziy" id="P9a-7Q-0fH"/>
                         <outlet property="monthTxtField" destination="sMS-fs-iOB" id="t2O-ge-TZk"/>
-                        <outlet property="transactionIdTxtField" destination="uWC-xY-QvI" id="W9M-fz-tnE"/>
+                        <outlet property="transactionIDTxtField" destination="uWC-xY-QvI" id="niY-cC-c8V"/>
                         <outlet property="yearTxtField" destination="n1S-C1-pDL" id="adS-N9-Zij"/>
-=======
-                        <outlet property="cardHolderTxtField" destination="unJ-aR-Pdm" id="hdG-NZ-O2n"/>
-                        <outlet property="cardNumberTxtField" destination="K7N-Am-zpJ" id="q9A-tP-nuD"/>
-                        <outlet property="cardView" destination="aLV-HR-ZaB" id="xUF-fC-SGI"/>
-                        <outlet property="cvvTxtField" destination="33O-Yq-ziy" id="JsS-Tw-9qZ"/>
-                        <outlet property="monthTxtField" destination="sMS-fs-iOB" id="hfV-Oc-DPs"/>
-                        <outlet property="transactionIDTxtField" destination="uWC-xY-QvI" id="bRC-3B-UJg"/>
-                        <outlet property="yearTxtField" destination="n1S-C1-pDL" id="qFX-Rx-I1I"/>
->>>>>>> redesign
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
