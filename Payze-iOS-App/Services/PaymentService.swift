@@ -14,7 +14,7 @@ protocol PaymentServiceProtocol {
     func startPayment(paymentDetails: PaymentDetails, _ completion: @escaping (Result<StartPaymentResponse, Error>) -> ())
 }
 
-final class PaymentService: NSObject, PaymentServiceProtocol {
+public final class PaymentService: NSObject, PaymentServiceProtocol {
     
     static let shared = PaymentService()
     private let postSession = URLSession(configuration: .default)
