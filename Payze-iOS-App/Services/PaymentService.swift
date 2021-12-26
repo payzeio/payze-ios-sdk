@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 
-protocol PaymentServiceProtocol {
+public protocol PaymentServiceProtocol {
     func startPayment(paymentDetails: PaymentDetails, _ completion: @escaping (Result<StartPaymentResponse, Error>) -> ())
 }
 
@@ -27,7 +27,7 @@ public final class PaymentService: NSObject, PaymentServiceProtocol {
                                              "transactionId",
                                              "billingAddress"]
     
-    func startPayment(paymentDetails: PaymentDetails, _ completion: @escaping (Result<StartPaymentResponse, Error>) -> ()) {
+    public func startPayment(paymentDetails: PaymentDetails, _ completion: @escaping (Result<StartPaymentResponse, Error>) -> ()) {
         cleanup()
         guard let request = createStartPaymentRequest(with: paymentDetails) else { return }
         postSession.dataTask(with: request) { [weak self] (data, res, err) in

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StartPaymentResponse: Codable {
+public struct StartPaymentResponse: Codable {
     let success: Bool
     let url: String?
     let threeDSIsPresent: Bool

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PaymentDetails {
+public struct PaymentDetails {
     var number: String = ""
     var cardHolder: String = ""
     var expirationDate: String = ""
