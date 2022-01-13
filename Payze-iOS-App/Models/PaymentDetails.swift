@@ -14,7 +14,7 @@ public struct PaymentDetails {
     var securityNumber: String = ""
     var transactionId: String = ""
     var billingAddress: String? = ""
-    static let defaultBillingAddress: String = ""
+    public static let defaultBillingAddress: String = ""
     
     public init?(number: String?,cardHolder: String?,expirationDate: String?,securityNumber: String?,transactionId: String?, billingAddress: String?) {
         
