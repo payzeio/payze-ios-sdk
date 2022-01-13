@@ -16,92 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rvZ-ZE-OZr">
-                                <rect key="frame" x="20" y="228.5" width="374" height="449"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAYZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-NT-TxA">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="142.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="90"/>
-                                        <color key="textColor" red="0.89478534460000003" green="0.88735294340000004" blue="0.98097711799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill card info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuZ-8e-Ccr">
-                                        <rect key="frame" x="0.0" y="147.5" width="374" height="39.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7N-Am-zpJ">
-                                        <rect key="frame" x="0.0" y="192" width="374" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="Pep-3x-djc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="cc-number"/>
-                                    </textField>
-                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card holder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unJ-aR-Pdm">
-                                        <rect key="frame" x="0.0" y="242" width="374" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-u0-t4K">
-                                        <rect key="frame" x="0.0" y="292" width="374" height="45"/>
-                                        <subviews>
-                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33O-Yq-ziy">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="45"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="postal-code"/>
-                                            </textField>
-                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMS-fs-iOB">
-                                                <rect key="frame" x="124.5" y="0.0" width="125" height="45"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="date-time"/>
-                                            </textField>
-                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-C1-pDL">
-                                                <rect key="frame" x="249.5" y="0.0" width="124.5" height="45"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="date-time"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Transaction ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWC-xY-QvI">
-                                        <rect key="frame" x="0.0" y="342" width="374" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-TD-3f2">
-                                        <rect key="frame" x="0.0" y="392" width="374" height="57"/>
-                                        <color key="tintColor" systemColor="systemPurpleColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="MAKE PAYMENT">
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
-                                            <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="makePayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PS3-MV-x6u"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="rvZ-ZE-OZr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Ep-hS-oSX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rvZ-ZE-OZr" secondAttribute="trailing" constant="20" id="PIw-A8-T5t"/>
-                            <constraint firstItem="rvZ-ZE-OZr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="R5f-1k-hXg"/>
-                            <constraint firstItem="rvZ-ZE-OZr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="arL-yX-D7j"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="cardHolderTxtField" destination="unJ-aR-Pdm" id="z9j-5Q-nZZ"/>
-                        <outlet property="cardNumberTxtField" destination="K7N-Am-zpJ" id="jvi-nV-Wyv"/>
-                        <outlet property="cvvTxtField" destination="33O-Yq-ziy" id="P9a-7Q-0fH"/>
-                        <outlet property="monthTxtField" destination="sMS-fs-iOB" id="t2O-ge-TZk"/>
-                        <outlet property="transactionIDTxtField" destination="uWC-xY-QvI" id="niY-cC-c8V"/>
-                        <outlet property="yearTxtField" destination="n1S-C1-pDL" id="adS-N9-Zij"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,9 +28,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

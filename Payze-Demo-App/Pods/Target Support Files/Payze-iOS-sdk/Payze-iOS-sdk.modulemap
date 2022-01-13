@@ -1,6 +1,0 @@
-framework module Payze_iOS_sdk {
-  umbrella header "Payze-iOS-sdk-umbrella.h"
-
-  export *
-  module * { export * }
-}
