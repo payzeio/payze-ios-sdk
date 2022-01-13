@@ -16,7 +16,7 @@ public protocol PaymentServiceProtocol {
 
 public final class PaymentService: NSObject, PaymentServiceProtocol {
     
-    static let shared = PaymentService()
+    public static let shared = PaymentService()
     private let postSession = URLSession(configuration: .default)
     private var twoFactorAuthResponse: TwoFAResponse?
     private var popUpView: MyWebView?
