@@ -1,5 +1,5 @@
 # payze-ios-sdk
-Payze Library for easy integration of payments into the Android app.
+Payze Library for easy integration of payments into the iOS app.
 
 ### Installation:
 
