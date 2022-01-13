@@ -16,7 +16,7 @@ public struct PaymentDetails {
     var billingAddress: String? = ""
     static let defaultBillingAddress: String = ""
     
-    init?(number: String?,cardHolder: String?,expirationDate: String?,securityNumber: String?,transactionId: String?, billingAddress: String?) {
+    public init?(number: String?,cardHolder: String?,expirationDate: String?,securityNumber: String?,transactionId: String?, billingAddress: String?) {
         
         guard let number = number else { return nil }
         guard let cardHolder = cardHolder else { return nil }
