@@ -28,7 +28,7 @@ PaymentService.shared.startPayment(paymentDetails: paymentDetails) { result in
 
 The result of the startPayment call is handled in it's closure
 
-Follow the instructions for transaction processing on our website https://payze.io/docs.
+Follow the instructions for transaction processing on our website https://docs.payze.io/reference/getting-started.
 
 ### Error codes:
 Some error codes from library.
